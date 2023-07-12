@@ -158,6 +158,3 @@ export default function Home() {
 
   )
 }
-
-  )
-}
