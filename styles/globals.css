@@ -18,7 +18,7 @@ a {
 * {
   box-sizing: border-box;
 }
-font-face {
-  font-family: 'Times New Roman', Times, serif;
-  
+@font-face {
+  font-family: "burtons";
+  src: url("../public/Burtons.otf");
 }
