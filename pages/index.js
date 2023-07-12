@@ -1,8 +1,10 @@
 import Head from 'next/head'
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
-import { BsFillMoonStarsFill } from 'react-icons/bs'
+import { BsFillMoonStarsFill, BsSunFill} from 'react-icons/bs'
+import { GiSailboat } from 'react-icons/gi';
 import Image from "next/image";
-import me from "../public/me.png";
+import me from "../public/me.jpg";
+import pirate from "../public/pirate.png";
 import { useState } from 'react';
 
 
@@ -34,23 +36,37 @@ export default function Home() {
           <nav className="py-10 mb-12 flex justify-between dark:text-white">
             <h1 className='bg-gradient-to-r from-white to-black px-4 py-2 rounded-md ml-8 text-xl font-burtons'>Tyler Spring's Portfolio</h1>
             <ul className='flex items-center'>
-              <li>
-                <BsFillMoonStarsFill
-                  onClick={() => setDarkMode(!darkMode)}
-                  className=" cursor-pointer text-2xl"
-                />
+            <li>
+                {darkMode ? (
+                  <BsSunFill
+                    onClick={() => setDarkMode(!darkMode)}
+                    className="cursor-pointer text-2xl"
+                  />
+                ) : (
+                  <BsFillMoonStarsFill
+                    onClick={() => setDarkMode(!darkMode)}
+                    className="cursor-pointer text-2xl"
+                  />
+                )}
               </li>
               <li>
-  <a className="bg-gradient-to-r from-black to-white px-4 py-2 rounded-md ml-8 text-xl font-burtons" href="/Tyler Spring Resume.pdf" target="_blank" rel="noopener noreferrer">
-    Resume
-  </a>
-</li>
+                <a
+                  className="bg-gradient-to-r from-black to-white px-4 py-2 rounded-md ml-4 text-xl font-burtons"
+                  href="/Tyler Spring Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Resume
+                </a>
+              </li>
 
             </ul>
           </nav>
           <div className='text-center p-10 max-w-xl mx-auto'>
-
-            <h3 className='text-5xl py-2 text-black dark:text-white'>About Me</h3>
+          <div className='relative mx-auto bg-gradient-to-b from-gray-50 rounded-full w-80 h-80 mt-10 md:mt-20 overflow-hidden md:h-96 md:w-96'>
+            <Image src={me} layout="fill" objectFit='cover' />
+          </div>
+            <h3 className='text-5xl  py-4 mt-6 text-black dark:text-white'>About Me</h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">My name is Tyler Spring. I currently live in Baltimore County, Maryland.
               I just received my  <span className='text-blue-700'>BA in computer science from University Maryland Global Campus</span> with a 3.8 GPA.
               I am actively looking for a junior level software engineering position in Maryland, Virginia, or Washington,
@@ -79,9 +95,7 @@ export default function Home() {
               <AiFillGithub />
             </a>
           </div>
-          <div className='relative mx-auto bg-gradient-to-b from-gray-50 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96'>
-            <Image src={me} layout="fill" objectFit='cover' />
-          </div>
+          
         </section>
         <section>
           <div className='lg:flex gap-10 '>
@@ -113,20 +127,37 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section>
+        <section className="flex flex-col items-center justify-center">
   <div className="lg:flex gap-10 justify-center">
     <h3 className="text-5xl py-2 text-center dark:text-white">Portfolio</h3>
   </div>
-  <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap justify-center">
+  <div className="flex-col gap-10 py-10 lg:flex-row lg:flex-wrap justify-center ">
     <h4 className="text-center text-lg font-medium pt-8 pb-2 py-4 text-black dark:text-white">
       Collection of projects I have worked on:
     </h4>
+    <div className='justify-center relative mx-auto aspect-square w-80 h-80 mt-10 md:mt-20 md:h-96 md:w-96'>
+  <Image src={pirate} layout="fill" objectFit='cover' />
+</div>
+<p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
+  CMSC 495 project from UMGC. I was responsible for front end development of the game mechanics.
+</p>
+<div className='text-5xl flex justify-center gap-16 py-3'>
+  <a href="https://github.com/PinoyColada/Pirate-Plunderers.git" target="_blank" rel="noopener noreferrer">
+    <AiFillGithub />
+  </a>
+  <a href='https://pirate-plunderers.vercel.app/' target="_blank" rel="noopener noreferrer">
+    <GiSailboat/>
+  </a>
+</div>
   </div>
 </section>
 
 
       </main>
     </div>
+
+  )
+}
 
   )
 }
