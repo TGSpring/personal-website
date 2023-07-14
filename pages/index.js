@@ -189,3 +189,6 @@ overflow-hidden md:h-96 md:w-96 ${darkMode ? 'shadow-white' : 'shadow-black'}`}>
 
   )
 }
+
+  )
+}
