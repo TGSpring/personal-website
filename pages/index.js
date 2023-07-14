@@ -116,7 +116,9 @@ overflow-hidden md:h-96 md:w-96 ${darkMode ? 'shadow-white' : 'shadow-black'}`}>
     <AiFillGithub />
   </a>
   <div className="code-image-container" style={{ filter: darkMode ? 'invert(100%)' : 'none' }}>
+    <a href="https://www.codecademy.com/profiles/Tgspring13" target="_blank" rel"noopener noreferrer">
   <Image src={code} width={50} height={50} alt="Code" />
+  </a>
 </div>
 
 </div>
