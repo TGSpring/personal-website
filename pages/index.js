@@ -1,10 +1,11 @@
 import Head from 'next/head'
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
 import { BsFillMoonStarsFill, BsSunFill} from 'react-icons/bs'
-import { GiSailboat } from 'react-icons/gi';
+import { GiSailboat, GiBiceps } from 'react-icons/gi';
 import Image from "next/image";
 import me from "../public/me.jpg";
 import pirate from "../public/pirate.png";
+import bros from "../public/bros.png";
 import { useState } from 'react';
 import code from "../public/codecademy.svg"
 
@@ -116,9 +117,7 @@ overflow-hidden md:h-96 md:w-96 ${darkMode ? 'shadow-white' : 'shadow-black'}`}>
     <AiFillGithub />
   </a>
   <div className="code-image-container" style={{ filter: darkMode ? 'invert(100%)' : 'none' }}>
-    <a href="https://www.codecademy.com/profiles/Tgspring13" target="_blank" rel= "noopener noreferrer">
   <Image src={code} width={50} height={50} alt="Code" />
-  </a>
 </div>
 
 </div>
@@ -182,6 +181,24 @@ overflow-hidden md:h-96 md:w-96 ${darkMode ? 'shadow-white' : 'shadow-black'}`}>
     <GiSailboat/>
   </a>
 </div>
+<div className='justify-center relative mx-auto aspect-square w-80 h-80 mt-10 md:mt-20 md:h-96 md:w-96'>
+  <Image src={bros} layout="fill" objectFit='cover' />
+</div>
+  <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
+    Small JavaScript program I made for fun because of already having a calorie calculator and a joke made
+    with the background. Takes a few inputs from user then calculates how many calories a person would need
+    to maintain their current weight. After the user hit calculate, 3 links appear. One being this site,
+    the others well go see.
+  </p>
+  <div className='text-5xl flex justify-center gap-16 py-3'>
+  <a href="https://github.com/TGSpring/Calorie_Calc" target="_blank" rel="noopener noreferrer">
+    <AiFillGithub />
+  </a>
+  <a href='https://calorie-calc-rn9b.vercel.app/' target="_blank" rel="noopener noreferrer">
+    <GiBiceps/>
+  </a>
+</div>
+
   </div>
 </section>
 
