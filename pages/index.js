@@ -212,7 +212,7 @@ overflow-hidden md:h-96 md:w-96 ${darkMode ? 'shadow-white' : 'shadow-black'}`}>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
               Followed along YouTube tutorial to create a snake game using C++ and Raylib. It is able to detect
               collisions with itself, the borders, and when the player reaches the apple photo added in. It is available
-              on my github, all you need to do it clone the repository and run the program.
+              on my github, all you need to do is clone the repository and run the program.
             </p>
             <div className='text-5xl flex justify-center gap-16 py-3'>
               <a href="https://github.com/TGSpring/c-snake" target="_blank" rel="noopener noreferrer">
