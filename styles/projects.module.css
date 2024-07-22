@@ -1,0 +1,71 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .nav {
+    padding: 10px 0;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: inherit;
+  }
+  
+  .textCenter {
+    text-align: center;
+  }
+  
+  .p10 {
+    padding: 10px;
+  }
+  
+  .maxWxl {
+    max-width: 36rem;
+  }
+  
+  .mxAuto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .relative {
+    position: relative;
+  }
+  
+  .darkMode {
+    background-color: #111827;
+    color: #ffffff;
+  }
+  
+  .portfolioItem {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .cursorPointer {
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+  
+  .fixedToggle {
+    position: fixed;
+    right: 2rem;
+    top: 20px;
+    transform: translateY(-50%);
+  }
+  
+  .textBlack {
+    color: #111827;
+  }
+  
+  .darkText {
+    color: #ffffff;
+  }
+  
+  .iconSize {
+    font-size: 1.5rem;
+  }
+  
