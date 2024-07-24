@@ -1,3 +1,4 @@
+/* General Layout and Flexbox */
 .main {
   display: flex;
   flex-direction: column;
@@ -6,12 +7,11 @@
 }
 
 .nav {
-  padding: 10px 0;
-  margin-bottom: 12px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: inherit;
+  padding: 10px 0;
+  margin-bottom: 12px;
 }
 
 .textCenter {
@@ -71,11 +71,13 @@
   width: 24rem;
 }
 
+/* Dark Mode */
 .darkMode {
   background-color: #111827;
   color: #ffffff;
 }
 
+/* Shadows */
 .shadowWhite {
   box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
 }
@@ -84,36 +86,34 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Flexbox Utilities */
 .flex {
   display: flex;
-}
-
-.flexWrap {
-  flex-wrap: wrap;
 }
 
 .justifyCenter {
   justify-content: center;
 }
 
-.flexGrow {
-  flex-grow: 1;
-}
-
 .itemsCenter {
   align-items: center;
 }
 
+.flexWrap {
+  flex-wrap: wrap;
+}
+
+.flexGrow {
+  flex-grow: 1;
+}
+
+/* Padding and Margin */
 .p4 {
   padding: 1rem;
 }
 
 .mdP8 {
   padding: 2rem;
-}
-
-.text5xl {
-  font-size: 3rem;
 }
 
 .py4 {
@@ -123,6 +123,42 @@
 
 .mt6 {
   margin-top: 1.5rem;
+}
+
+.py10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.px4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.ml4 {
+  margin-left: 1rem;
+}
+
+.gap10 {
+  gap: 2.5rem;
+}
+
+/* Typography */
+.text5xl {
+  font-size: 3rem;
+}
+
+.textMd {
+  font-size: 1rem;
+}
+
+.textXl {
+  font-size: 1.25rem;
 }
 
 .textBlack {
@@ -141,10 +177,6 @@
   color: #e5e7eb;
 }
 
-.mdTextXl {
-  font-size: 1.25rem;
-}
-
 .textBlue700 {
   color: #1d4ed8;
 }
@@ -153,22 +185,60 @@
   line-height: 2rem;
 }
 
-.textMd {
+.fontBurtons {
+  font-family: 'Burtons', sans-serif;
+}
+
+/* Buttons and Links */
+.resume-link,
+.projects-link,
+.navLink,
+.emailLink {
+  text-decoration: none;
+  color: inherit;
   font-size: 1rem;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s;
+  font-family: 'Burtons', sans-serif;
 }
 
-.portfolioItem {
-  text-align: center;
-  margin-top: 1rem;
-}
-
-.roundedXl {
-  border-radius: 0.75rem;
+.resume-link:hover,
+.projects-link:hover,
+.navLink:hover,
+.emailLink:hover {
+  color: #0072b1;
 }
 
 .cursorPointer {
   cursor: pointer;
   font-size: 1.5rem;
+}
+
+/* Icons */
+.iconLink,
+.iconLinkGH {
+  color: inherit;
+  transition: color 0.3s;
+}
+
+.iconLink:hover,
+.iconLinkGH:hover {
+  color: #0072b1;
+}
+
+.iconSize {
+  font-size: 1.5rem;
+}
+
+/* Navigation */
+.navLinks {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.navItem {
+  margin-left: 20px;
 }
 
 .fixedToggle {
@@ -178,57 +248,64 @@
   transform: translateY(-50%);
 }
 
-.py10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
-.gap10 {
-  gap: 2.5rem;
-}
-
-.lgFlex {
+.themeToggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
 }
 
-.lgFlexRow {
-  flex-direction: row;
+.themeIcon {
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
-.lgFlexWrap {
-  flex-wrap: wrap;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
-.fontBurtons {
-  font-family: 'Burtons', sans-serif;
+.sectionContainer, .imageContainer {
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
-.px4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
+/* Sections and Containers */
+.sectionContainer {
+  width: 100%;
+  padding: 2rem;
+  max-width: 40rem;
+  margin: 0 auto;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.py2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+
+.sectionTitle {
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+  margin-top: 2rem;
+  color: inherit;
 }
 
-.roundedMd {
-  border-radius: 0.375rem;
+.sectionText {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: inherit;
 }
 
-.ml4 {
-  margin-left: 1rem;
+.highlight {
+  color: #1d4ed8;
 }
 
-.textXl {
-  font-size: 1.25rem;
-}
-
-.minHScreen {
-  min-height: 100vh;
-}
-
+/* Image Container */
 .imageContainer {
   position: relative;
   width: 20rem;
@@ -247,49 +324,17 @@
   object-fit: cover;
 }
 
-.iconLink {
-  color: inherit;
-  transition: color 0.3s;
-}
-.iconLinkGH {
-  color: inherit;
-  transition: color 0.3s;
-}
-
-.iconLink:hover {
-  color: #0072b1; /* LinkedIn blue */
-}
-
-.iconLinkGH:hover {
-  color: #881e65; /* LinkedIn blue */
-}
 .codeImageContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
 }
 
-.resume-link {
-  text-decoration: none;
-  color: inherit;
-  transition: color 0.3s;
+.codeImage {
+  object-fit: cover;
+  transition: filter 0.3s ease;
 }
-
-.resume-link:hover {
-  color: #0072b1;
-}
-
-.projects-link {
-  text-decoration: none;
-  color: inherit;
-  transition: color 0.3s;
-  margin-left: 5px;
-}
-
-.projects-link:hover {
-  color: #0072b1;
-}
-
-.iconSize {
-  font-size: 1.5rem;
+.darkMode .codeImage {
+  filter: brightness(0.7) contrast(1.2); /* Adjust these values to fit your needs */
 }
