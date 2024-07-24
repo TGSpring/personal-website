@@ -24,11 +24,11 @@ export default function Home() {
         <section className="min-h-screen">
           <nav className={`${styles.nav} ${darkMode ? styles.darkText : styles.textBlack}`}>
             <h1 className="px-4 py-2 rounded-md text-xl font-burtons ml-4">Tyler Spring's Portfolio</h1>
-            <div className={`flex justify-center flex-grow ${styles.flexGrow}`}>
+            <div className={styles.navLinks}>
               <ul className="flex items-center justify-center">
-                <li>
+                <li className={styles.navItem}>
                   <a
-                    className="resume-link"
+                    className={styles.navLink}
                     href="/Tyler Spring Resume.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -36,9 +36,9 @@ export default function Home() {
                     Resume
                   </a>
                 </li>
-                <li>
+                <li className={styles.navItem}>
                   <a
-                    className="projects-link"
+                    className={styles.navLink}
                     href="/projects"
                   >
                     Projects
@@ -46,49 +46,48 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-            <div className={`${styles.fixedToggle} ${darkMode ? styles.darkText : styles.textBlack}`}>
+            <div className={styles.themeToggle}>
               {darkMode ? (
-                <BsSunFill onClick={() => setDarkMode(!darkMode)} className={`${styles.cursorPointer} ${styles.iconSize}`} />
+                <BsSunFill onClick={() => setDarkMode(!darkMode)} className={styles.themeIcon} />
               ) : (
-                <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className={`${styles.cursorPointer} ${styles.iconSize}`} />
+                <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className={styles.themeIcon} />
               )}
             </div>
-            <a className="px-4 py-2 rounded-md text-xl font-burtons ml-4" href="mailto:TylerGSpring@gmail.com">Email Me!</a>
+            <a className={styles.emailLink} href="mailto:TylerGSpring@gmail.com">Email Me!</a>
           </nav>
 
-          <div className={`text-center p-10 max-w-xl mx-auto ${styles.textCenter} ${styles.p10} ${styles.maxWxl} ${styles.mxAuto}`}>
-            <div className={`${styles.imageContainer} ${darkMode ? styles.shadowWhite : styles.shadowBlack}`}>
-              <Image src={me} layout="fill" className={styles.image} />
-            </div>
-            <h3 className={`text-5xl py-4 mt-6 ${darkMode ? styles.darkText : styles.textBlack}`}>About Me</h3>
-            <p className={`${styles.textGray800} ${darkMode ? styles.textGray200 : ''}`}>
-              My name is Tyler Spring. I currently live in Baltimore County, Maryland.
-              I just received my <span className={styles.textBlue700}>BA in Computer Science from University of Maryland Global Campus</span> with a 3.8 GPA.
-              I am actively looking for a junior-level software engineering position in Maryland, Virginia, or Washington, DC and would love to earn clearance.
-              I have a passion for working out, rock music, cars, video games, science, and engineering.
-            </p>
-          </div>
+          <div className={`${styles.container} ${styles.textCenter} ${styles.p10} ${styles.maxWxl} ${styles.mxAuto}`}>
+  <div className={`${styles.imageContainer} ${darkMode ? styles.shadowWhite : styles.shadowBlack}`}>
+    <Image src={me} layout="fill" className={styles.image} />
+  </div>
+  
+  <div className={styles.sectionContainer}>
+    <h3 className={styles.sectionTitle}>About Me</h3>
+    <p className={styles.sectionText}>
+      My name is Tyler Spring. I currently live in Baltimore County, Maryland.
+      I just received my <span className={styles.highlight}>BA in Computer Science from University of Maryland Global Campus</span> with a 3.8 GPA.
+      I am actively looking for a junior-level software engineering position in Maryland, Virginia, or Washington, DC and would love to earn clearance.
+      I have a passion for working out, rock music, cars, video games, science, and engineering.
+    </p>
 
-          <div className={`w-full p-4 md:p-8 max-w-xl mx-auto ${styles.p4} ${styles.mdP8} ${styles.maxWxl} ${styles.mxAuto}`}>
-            <h3 className={`text-5xl py-4 mt-6 ${darkMode ? styles.darkText : styles.textBlack}`}>Academics</h3>
-            <p className={`${styles.textMd} py-5 leading-8 ${styles.textGray800} ${darkMode ? styles.textGray200 : ''} ${styles.mdTextXl}`}>
-              I started taking computer science classes at College of Southern Maryland.
-              From there, I transferred to Towson University in 2017 to study computer science.
-              During the 2020 pandemic, I managed to <span className={styles.textBlue700}>earn my AA in General Studies from College of Southern Maryland in June 2020</span> while still at Towson.
-              I decided to leave Towson my junior year to finish my degree online at University of Maryland Global Campus, due to excelling in an online environment.
-              On July 11th, 2023, I completed my program and received my degree.
-            </p>
-          </div>
+    <h3 className={styles.sectionTitle}>Academics</h3>
+    <p className={styles.sectionText}>
+      I started taking computer science classes at College of Southern Maryland.
+      From there, I transferred to Towson University in 2017 to study computer science.
+      During the 2020 pandemic, I managed to <span className={styles.highlight}>earn my AA in General Studies from College of Southern Maryland in June 2020</span> while still at Towson.
+      I decided to leave Towson my junior year to finish my degree online at University of Maryland Global Campus, due to excelling in an online environment.
+      On July 11th, 2023, I completed my program and received my degree.
+    </p>
 
-          <div className={`w-full p-4 md:p-8 max-w-xl mx-auto ${styles.p4} ${styles.mdP8} ${styles.maxWxl} ${styles.mxAuto}`}>
-            <h3 className={`text-5xl py-4 mt-6 ${darkMode ? styles.darkText : styles.textBlack}`}>Coding Hobbies</h3>
-            <p className={`${styles.textMd} py-5 leading-8 ${styles.textGray800} ${darkMode ? styles.textGray200 : ''} ${styles.mdTextXl}`}>
-              I have always tinkered with technology and knew since high school that I wanted to work with software, thanks to my love for video games.
-              As my curiosity grew, I began teaching myself programming through Codecademy, starting with JavaScript.
-              I also worked with Eclipse to learn Java and gained a strong understanding of object-oriented programming.
-              Throughout my schooling and full-time work, I developed an interest in SQL, Python, C++, and React.
-            </p>
-          </div>
+    <h3 className={styles.sectionTitle}>Coding Hobbies</h3>
+    <p className={styles.sectionText}>
+      I have always tinkered with technology and knew since high school that I wanted to work with software, thanks to my love for video games.
+      As my curiosity grew, I began teaching myself programming through Codecademy, starting with JavaScript.
+      I also worked with Eclipse to learn Java and gained a strong understanding of object-oriented programming.
+      Throughout my schooling and full-time work, I developed an interest in SQL, Python, C++, and React.
+    </p>
+  </div>
+</div>
 
           <div className={`text-5xl flex justify-center gap-16 py-3 ${darkMode ? styles.darkText : ''}`}>
             <a href="https://www.linkedin.com/in/tyler-spring-6a7099143" target="_blank" rel="noopener noreferrer" className={styles.iconLink}>
@@ -97,9 +96,9 @@ export default function Home() {
             <a href="https://github.com/TGSpring" target="_blank" rel="noopener noreferrer" className={styles.iconLinkGH}>
               <AiFillGithub />
             </a>
-            <div className={styles.codeImageContainer}>
+            <div className={`${styles.codeImageContainer} ${darkMode ? styles.darkMode : ''}`}>
               <a href="https://www.codecademy.com/profiles/Tgspring13" target="_blank" rel="noopener noreferrer">
-                <Image src={code} width={40} height={40} alt="Codecademy" />
+                <Image src={code} layout='fill' className={styles.codeImage} alt="Codecademy" />
               </a>
             </div>
           </div>
