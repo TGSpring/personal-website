@@ -77,6 +77,13 @@
   color: #ffffff;
 }
 
+/* Specific styles for cards in dark mode */
+.darkMode .sectionItem {
+  background-color: #1f2937; /* Dark background for cards */
+  border: 1px solid #374151; /* Darker border for cards */
+  color: #e5e7eb; /* Lighter text color for cards */
+}
+
 /* Shadows */
 .shadowWhite {
   box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
@@ -270,35 +277,53 @@
   width: 100%;
 }
 
-.sectionContainer, .imageContainer {
-  margin-bottom: 2rem;
+/* Sections and Containers */
+.sectionContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.sectionItem {
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--card-border, #e0e0e0);
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  height: 500px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.sectionItem:hover {
+  transform: translateY(-5px);
+}
+
+/* Dark Mode Overrides for Cards */
+.darkMode .sectionItem {
+  background-color: #1f2937; /* Ensure dark background for cards */
+  border: 1px solid #374151; /* Darker border for cards */
+  color: #ffffff; /* Lighter text color for cards */
+}
+
+.sectionTitle {
+  font-size: 1.20rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
   text-align: center;
 }
 
-/* Sections and Containers */
-.sectionContainer {
-  width: 100%;
-  padding: 2rem;
-  max-width: 40rem;
-  margin: 0 auto;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
-.sectionTitle {
-  font-size: 2.5rem;
-  padding-bottom: 1rem;
-  margin-top: 2rem;
-  color: inherit;
-}
-
 .sectionText {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  color: inherit;
+  font-size: 1.05rem;
+  line-height: 1.4;
+  text-align: center;
+  margin: 0;
 }
 
 .highlight {
@@ -311,11 +336,6 @@
   width: 20rem;
   height: 20rem;
   margin-top: 2.5rem;
-  @media (min-width: 768px) {
-    width: 24rem;
-    height: 24rem;
-    margin-top: 5rem;
-  }
   overflow: hidden;
   border-radius: 9999px;
 }
@@ -335,6 +355,7 @@
   object-fit: cover;
   transition: filter 0.3s ease;
 }
+
 .darkMode .codeImage {
-  filter: brightness(0.7) contrast(1.2); /* Adjust these values to fit your needs */
+  filter: brightness(0.7) contrast(1.2);
 }
