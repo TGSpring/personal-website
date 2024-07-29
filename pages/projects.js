@@ -25,7 +25,7 @@ export default function Project() {
   return (
     <div className={darkMode ? styles.darkMode : styles.lightMode}>
       <Head>
-        <title>Project Title</title>
+        <title>Portfolio Projects</title>
         <meta name="description" content="Description of the project" />
       </Head>
 
