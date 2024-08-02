@@ -3,6 +3,7 @@ import styles from '../styles/projects.module.css';
 import Image from 'next/image';
 import bros from '../public/bros.png';
 import pirate from '../public/pirate.png';
+import snakey from '../public/snakeGame.png';
 import { useState, useEffect } from 'react';
 import { BsFillMoonStarsFill, BsSunFill } from 'react-icons/bs';
 import { GiSailboat, GiBiceps } from 'react-icons/gi';
@@ -30,7 +31,17 @@ export default function Project() {
       </Head>
 
       <nav className={`${styles.nav} ${darkMode ? styles.darkText : styles.textBlack}`}>
-        <a href="/" className={styles.backButton}>Back to Home</a>
+        <ul className={styles.navLinks}>
+          <li className={styles.navItem}>
+            <a href='/' className={styles.navLink}>Home</a>
+          </li>
+          <li className={styles.navItem}>
+            <a href='/Tyler Spring Resume.pdf' target='_blank' rel="noopener noreferrer" className={styles.navLink}>Resume</a>
+          </li>
+          <li className={styles.navItem}>
+            <a href='mailto:TylerGSpring@gmail.com' className={styles.navLink}>Email Me!</a>
+          </li>
+        </ul>
         <div className={styles.themeToggle}>
           {darkMode ? (
             <BsSunFill onClick={() => setDarkMode(!darkMode)} className={styles.themeIcon} />
@@ -63,7 +74,7 @@ export default function Project() {
             </div>
           </div>
         </div>
-        <h1 className={styles.title}>Project Title</h1>
+        <h1 className={styles.title}>Calorie Calculator</h1>
         <div className={styles.projectContent}>
           <div className={styles.imageContainer}>
             <Image src={bros} alt="Project Screenshot" layout="fill" className={styles.image} />
@@ -78,6 +89,22 @@ export default function Project() {
                 <GiBiceps className={styles.iconSize} />
               </a>
               <a href="https://github.com/TGSpring/Calorie_Calc" target="_blank" rel="noopener noreferrer">
+                <AiFillGithub className={styles.iconSize} />
+              </a>
+            </div>
+          </div>
+        </div>
+        <h1 className={styles.title}>Snake Game</h1>
+        <div className={styles.projectContent}>
+          <div className={styles.imageContainer}>
+            <Image src={snakey} alt="Project Screen" layout='fill' className={styles.image} />
+          </div>
+          <div className={styles.description}>
+            <p>Followed along YouTube tutorial to create a snake game using C++ and Raylib. It is able to detect
+              collisions with itself, the borders, and when the player reaches the apple photo added in. It is available
+              on my github, all you need to do is clone the repository and run the program.</p>
+            <div className={styles.links}>
+              <a href="https://github.com/TGSpring/c-snake" target="_blank" rel="noopener noreferrer">
                 <AiFillGithub className={styles.iconSize} />
               </a>
             </div>
