@@ -41,27 +41,22 @@ export default function Home() {
       <main className={styles.main}>
         <section className="min-h-screen">
           <nav className={`${styles.nav} ${darkMode ? styles.darkText : styles.textBlack}`}>
-            <h1 className="px-4 py-2 rounded-md text-xl font-burtons ml-4">Tyler Spring's Portfolio</h1>
+            <h1 className={`${styles.title}`}>Tyler Spring's Portfolio</h1>
             <div className={styles.navLinks}>
-              <ul className="flex items-center justify-center">
-                <li className={styles.navItem}>
-                  <a
-                    className={styles.navLink}
+              <ul>
+                  <a className={`${styles.navLink} ${styles.navLinkResume}`}
                     href="/Tyler Spring Resume.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     Resume
                   </a>
-                </li>
-                <li className={styles.navItem}>
                   <a
-                    className={styles.navLink}
+                    className={`${styles.navLink} ${styles.navLinkProject}`}
                     href="/projects"
                   >
                     Projects
                   </a>
-                </li>
               </ul>
             </div>
             <div className={styles.themeToggle}>
@@ -71,7 +66,7 @@ export default function Home() {
                 <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className={styles.themeIcon} />
               )}
             </div>
-            <a className={styles.emailLink} href="mailto:TylerGSpring@gmail.com">Email Me!</a>
+            <a className={styles.navLink} href="mailto:TylerGSpring@gmail.com">Email Me!</a>
           </nav>
 
           <div className={`${styles.container} ${styles.textCenter} ${styles.p10} ${styles.maxWxl} ${styles.mxAuto}`}>
