@@ -15,30 +15,40 @@
 }
 
 .lightMode {
-  background-color: #ffffff; /* Light background */
-  color: #000000; /* Light text color */
-  min-height: 100vh; /* Ensure full viewport height */
+  background-color: #ffffff;
+  /* Light background */
+  color: #000000;
+  /* Light text color */
+  min-height: 100vh;
+  /* Ensure full viewport height */
   display: flex;
   flex-direction: column;
 }
 
 .lightMode .nav {
-  background-color: #f8f9fa; /* Light nav background */
-  color: #000000; /* Dark text color for nav */
+  background-color: #f8f9fa;
+  /* Light nav background */
+  color: #000000;
+  /* Dark text color for nav */
 }
 
 /* Dark Mode */
 .darkMode {
-  background-color: #111827; /* Dark background */
-  color: #ffffff; /* Light text color */
-  min-height: 100vh; /* Ensure full viewport height */
+  background-color: #111827;
+  /* Dark background */
+  color: #ffffff;
+  /* Light text color */
+  min-height: 100vh;
+  /* Ensure full viewport height */
   display: flex;
   flex-direction: column;
 }
 
 .darkMode .nav {
-  background-color: #1f2937; /* Dark nav background */
-  color: #ffffff; /* Light text color for nav */
+  background-color: #1f2937;
+  /* Dark nav background */
+  color: #ffffff;
+  /* Light text color for nav */
 }
 
 /* General styles */
@@ -50,10 +60,27 @@
   margin-bottom: 12px;
 }
 
-.backButton {
-  color: inherit;
+.navLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  gap: 20px;
+}
+
+.navItem {
+  list-style: none;
+}
+
+.navLink {
   text-decoration: none;
-  font-size: 1rem;
+  color: inherit;
+  font-size: 1.25rem;
+  transition: color 0.3s;
+}
+
+.navLink:hover {
+  color: #0072b1;
 }
 
 .themeToggle {
@@ -69,7 +96,8 @@
 
 .main {
   padding: 2rem;
-  flex: 1; /* Allow the main content to grow and fill the available space */
+  flex: 1;
+  /* Allow the main content to grow and fill the available space */
 }
 
 .title {
@@ -79,27 +107,35 @@
 
 .imageContainer {
   position: relative;
-  width: 400px; /* Fixed width */
-  height: 400px; /* Fixed height */
+  width: 400px;
+  /* Fixed width */
+  height: 400px;
+  /* Fixed height */
   overflow: hidden;
-  border-radius: 8px; /* Optional: rounded corners */
-  background-color: #f0f0f0; /* Optional: background color */
+  border-radius: 8px;
+  /* Optional: rounded corners */
+  background-color: #f0f0f0;
+  /* Optional: background color */
 }
 
 .image {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%; /* Stretch to fit container */
-  height: 100%; /* Stretch to fit container */
-  object-fit: cover; /* Ensure the image covers the container without distortion */
+  width: 100%;
+  /* Stretch to fit container */
+  height: 100%;
+  /* Stretch to fit container */
+  object-fit: cover;
+  /* Ensure the image covers the container without distortion */
 }
+
 .description {
-flex: 1;
-max-width: 600px;
-padding: 1rem;
-background-color: #fff;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  max-width: 600px;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .description p {
