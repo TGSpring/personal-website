@@ -79,7 +79,7 @@ export default function Home() {
                 <h3 className={styles.sectionTitle}>About Me</h3>
                 <p className={styles.sectionText}>
                   Hello, I'm Tyler Spring, a recent graduate with a
-                  <span className={styles.highlight}>BA in Computer Science from the University of Maryland Global Campus,
+                  <span className={styles.highlight}> BA in Computer Science from the University of Maryland Global Campus,
                     where I achieved a 3.8 GPA.</span> Currently residing in Baltimore County, Maryland, I am eager to embark on my career in software engineering.
                   I am actively seeking a junior-level software engineering position in Maryland, Virginia, or Washington, DC, with a strong interest in earning security clearance.
                   My passion extends beyond coding; I enjoy working out, rock music, cars, video games, science, and engineering. I'm excited to bring my skills and enthusiasm to a dynamic team.
@@ -89,7 +89,7 @@ export default function Home() {
                 <h3 className={styles.sectionTitle}>Academics</h3>
                 <p className={styles.sectionText}>
                   I began my journey in computer science at the College of Southern Maryland before transferring to Towson University in 2017 to continue my studies. Despite the challenges of the 2020 pandemic,
-                  <span className={styles.highlight}>I successfully earned my AA in General Studies from the College of Southern Maryland in June 2020,</span>
+                  <span className={styles.highlight}> I successfully earned my AA in General Studies from the College of Southern Maryland in June 2020,</span>
                   while still pursuing my studies at Towson.
 
                   Recognizing my strength in online learning, I chose to complete my degree through the University of Maryland Global Campus. I graduated on July 11th, 2023, with a BA in Computer Science.</p>
