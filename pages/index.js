@@ -66,7 +66,7 @@ export default function Home() {
                 <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className={styles.themeIcon} />
               )}
             </div>
-            <a className={styles.navLink} href="mailto:TylerGSpring@gmail.com">Email Me!</a>
+            <a className={`${styles.navLink} ${styles.emailLink}`} href="mailto:TylerGSpring@gmail.com">Email Me!</a>
           </nav>
 
           <div className={`${styles.container} ${styles.textCenter} ${styles.p10} ${styles.maxWxl} ${styles.mxAuto}`}>
