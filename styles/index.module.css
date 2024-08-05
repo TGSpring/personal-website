@@ -270,6 +270,9 @@
     width: 100%;
     text-align: center;
   }
+  .emailLink {
+    padding-right: 3rem;
+  }
 
   .themeToggle {
     margin-top: 10px;
