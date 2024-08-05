@@ -59,10 +59,10 @@ export default function Project() {
           </div>
           <div className={styles.description}>
             <p>
-              CMSC 495 project from UMGC. A space invaders like game, but better. It is a full stack
-              program where I was responsible for front end development of the game mechanics. This comprised
-              of JavaScript, React, HTML, and CSS. This project works with python and flask for backend to log
-              names and score to update a live leaderboard.
+              As part of my coursework for CMSC 495 at UMGC, I developed an advanced Space Invaders-like game. 
+              This full-stack project featured a dynamic frontend, where I took charge of the game mechanics using 
+              JavaScript, React, HTML, and CSS. The backend was built with Python and Flask, enabling real-time 
+              logging of names and scores to update a live leaderboard.
             </p>
             <div className={styles.links}>
               <a href='https://pirate-plunderers.vercel.app/' target='_blank' rel='noopener noreferrer'>
@@ -80,10 +80,10 @@ export default function Project() {
             <Image src={bros} alt="Project Screenshot" layout="fill" className={styles.image} />
           </div>
           <div className={styles.description}>
-            <p>Small JavaScript program I made for fun because of already having a calorie calculator and a joke made
-              with the background. Takes a few inputs from user then calculates how many calories a person would need
-              to maintain their current weight. After the user hit calculate, 3 links appear. One being this site,
-              the others well go see.</p>
+            <p>This JavaScript program, created as a fun project, extends the concept of a calorie calculator 
+              with a humorous twist. Users input a few details to calculate their caloric needs for maintaining 
+              their current weight. Once the calculation is complete, the program generates three links, 
+              including one to this site and a couple of playful surprises.</p>
             <div className={styles.links}>
               <a href='https://calorie-calc-rn9b.vercel.app/' target="_blank" rel="noopener noreferrer">
                 <GiBiceps className={styles.iconSize} />
@@ -100,9 +100,9 @@ export default function Project() {
             <Image src={snakey} alt="Project Screen" layout='fill' className={styles.image} />
           </div>
           <div className={styles.description}>
-            <p>Followed along YouTube tutorial to create a snake game using C++ and Raylib. It is able to detect
-              collisions with itself, the borders, and when the player reaches the apple photo added in. It is available
-              on my github, all you need to do is clone the repository and run the program.</p>
+            <p>This project is a Snake game developed in C++ using the Raylib library, following a YouTube tutorial.
+               The game features collision detection with the snake itself, borders, and an apple. 
+               You can clone the repository from my GitHub and run the program to play.</p>
             <div className={styles.links}>
               <a href="https://github.com/TGSpring/c-snake" target="_blank" rel="noopener noreferrer">
                 <AiFillGithub className={styles.iconSize} />

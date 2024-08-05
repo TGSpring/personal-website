@@ -44,19 +44,19 @@ export default function Home() {
             <h1 className={`${styles.title}`}>Tyler Spring's Portfolio</h1>
             <div className={styles.navLinks}>
               <ul>
-                  <a className={`${styles.navLink} ${styles.navLinkResume}`}
-                    href="/Tyler Spring Resume.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Resume
-                  </a>
-                  <a
-                    className={`${styles.navLink} ${styles.navLinkProject}`}
-                    href="/projects"
-                  >
-                    Projects
-                  </a>
+                <a className={`${styles.navLink} ${styles.navLinkResume}`}
+                  href="/Tyler Spring Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Resume
+                </a>
+                <a
+                  className={`${styles.navLink} ${styles.navLinkProject}`}
+                  href="/projects"
+                >
+                  Projects
+                </a>
               </ul>
             </div>
             <div className={styles.themeToggle}>
@@ -78,29 +78,28 @@ export default function Home() {
               <div className={`${styles.sectionItem} ${darkMode ? styles.darkMode : ''}`}>
                 <h3 className={styles.sectionTitle}>About Me</h3>
                 <p className={styles.sectionText}>
-                  My name is Tyler Spring. I currently live in Baltimore County, Maryland.
-                  I just received my <span className={styles.highlight}>BA in Computer Science from University of Maryland Global Campus</span> with a 3.8 GPA.
-                  I am actively looking for a junior-level software engineering position in Maryland, Virginia, or Washington, DC and would love to earn clearance.
-                  I have a passion for working out, rock music, cars, video games, science, and engineering.
+                  Hello, I'm Tyler Spring, a recent graduate with a
+                  <span className={styles.highlight}>BA in Computer Science from the University of Maryland Global Campus,
+                    where I achieved a 3.8 GPA.</span> Currently residing in Baltimore County, Maryland, I am eager to embark on my career in software engineering.
+                  I am actively seeking a junior-level software engineering position in Maryland, Virginia, or Washington, DC, with a strong interest in earning security clearance.
+                  My passion extends beyond coding; I enjoy working out, rock music, cars, video games, science, and engineering. I'm excited to bring my skills and enthusiasm to a dynamic team.
                 </p>
               </div>
               <div className={`${styles.sectionItem} ${darkMode ? styles.darkMode : ''}`}>
                 <h3 className={styles.sectionTitle}>Academics</h3>
                 <p className={styles.sectionText}>
-                  I started taking computer science classes at College of Southern Maryland.
-                  From there, I transferred to Towson University in 2017 to study computer science.
-                  During the 2020 pandemic, I managed to <span className={styles.highlight}>earn my AA in General Studies from College of Southern Maryland in June 2020</span> while still at Towson.
-                  I decided to leave Towson my junior year to finish my degree online at University of Maryland Global Campus, due to excelling in an online environment.
-                  On July 11th, 2023, I completed my program and received my degree.
-                </p>
+                  I began my journey in computer science at the College of Southern Maryland before transferring to Towson University in 2017 to continue my studies. Despite the challenges of the 2020 pandemic,
+                  <span className={styles.highlight}>I successfully earned my AA in General Studies from the College of Southern Maryland in June 2020,</span>
+                  while still pursuing my studies at Towson.
+
+                  Recognizing my strength in online learning, I chose to complete my degree through the University of Maryland Global Campus. I graduated on July 11th, 2023, with a BA in Computer Science.</p>
               </div>
               <div className={`${styles.sectionItem} ${darkMode ? styles.darkMode : ''}`}>
                 <h3 className={styles.sectionTitle}>Coding Hobbies</h3>
                 <p className={styles.sectionText}>
-                  I have always tinkered with technology and knew since high school that I wanted to work with software, thanks to my love for video games.
-                  As my curiosity grew, I began teaching myself programming through Codecademy, starting with JavaScript.
-                  I also worked with Eclipse to learn Java and gained a strong understanding of object-oriented programming.
-                  Throughout my schooling and full-time work, I developed an interest in SQL, Python, C++, and React.
+                  My fascination with technology and software began in high school, fueled by my passion for video games. This early interest led me to start teaching myself programming through Codecademy, beginning with JavaScript.
+
+                  I further expanded my skills by working with Eclipse to learn Java, where I gained a solid foundation in object-oriented programming. As I continued my education and work experience, I developed a keen interest in SQL, Python, C++, and React.
                 </p>
               </div>
 
